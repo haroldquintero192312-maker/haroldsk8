@@ -1,0 +1,85 @@
+html,
+body {
+    margin: 0;
+    min-height: 100%;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    text-align: center;
+    color: white;
+
+   background-image: url("./Imagenes/fondo.jpg");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+}
+
+.contenido {
+    min-height: 100vh;
+    box-sizing: border-box;
+    padding: 50px 20px;
+
+    /* Capa oscura TRANSPARENTE encima de la imagen */
+    background-color: rgba(0, 0, 0, 0.25);
+}
+
+h1 {
+    h1 {
+    font-family: Impact, "Arial Black", sans-serif;
+    font-size: 75px;
+    font-weight: 900;
+    letter-spacing: 5px;
+    text-transform: uppercase;
+
+    color: white;
+
+    text-shadow:
+        4px 4px 0 #000,
+        8px 8px 0 rgba(0, 0, 0, 0.5);
+
+    transform: rotate(-2deg);
+
+    margin: 0 0 20px;
+}
+}
+
+.bienvenida {
+    font-size: 30px;
+}
+
+nav {
+    margin: 40px 0;
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+
+    background-color: rgba(0, 0, 0, 0.45);
+
+    padding: 12px 20px;
+    margin: 5px;
+
+    border-radius: 8px;
+    display: inline-block;
+}
+
+nav a:hover {
+    background-color: white;
+    color: black;
+}
+
+section {
+    max-width: 700px;
+    margin: 30px auto;
+    padding: 20px;
+
+    background-color: rgba(0, 0, 0, 0.55);
+    border-radius: 15px;
+}
+
+h2 {
+    font-size: 30px;
+}
