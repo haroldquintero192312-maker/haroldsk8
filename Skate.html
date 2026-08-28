@@ -1,13 +1,209 @@
+```html
 <!DOCTYPE html>
 <html lang="es">
+
 <head>
+
     <meta charset="UTF-8">
-    <title>Skates - HaroldSk8</title>
+
+    <meta
+        name="viewport"
+        content="width=device-width, initial-scale=1.0"
+    >
+
+    <title>Skates | HarLis Sk8</title>
+
+    <link
+        rel="stylesheet"
+        href="style.css"
+    >
+
 </head>
-<body>
-    <h1>Skates</h1>
- <img src="./Skate.jpg" alt="Skate 1">
-<img src="./skate2.jpg" alt="Skate 2">
-    <p><a href="index.html">Volver al inicio</a></p>
+
+
+<body class="pagina-skates">
+
+
+    <!-- =====================================
+         ENCABEZADO
+    ====================================== -->
+
+    <header class="encabezado-categoria">
+
+
+        <a
+            href="Carrito.html"
+            class="boton-carrito"
+        >
+
+            🛒 Carrito
+
+            <span id="contador-carrito">
+                0
+            </span>
+
+        </a>
+
+
+        <h1>
+            🛹 Skates
+        </h1>
+
+
+        <p>
+            Encuentra el skate perfecto
+            para llevar tu estilo a otro nivel.
+        </p>
+
+
+        <a
+            href="index.html"
+            class="volver"
+        >
+            ← Volver al inicio
+        </a>
+
+
+    </header>
+
+
+
+    <!-- =====================================
+         CATÁLOGO
+    ====================================== -->
+
+    <main class="catalogo">
+
+
+        <!-- =================================
+             SKATE COMPLETO
+        ================================== -->
+
+        <article class="tarjeta-skate">
+
+
+            <div class="foto-skate">
+
+                <img
+                    src="Imagenes/Skate.jpg"
+                    alt="Skate completo"
+                >
+
+                <span class="etiqueta-producto">
+                    DESTACADO
+                </span>
+
+            </div>
+
+
+            <div class="info-skate">
+
+
+                <h2>
+                    Skate completo
+                </h2>
+
+
+                <p>
+                    Skate ideal para comenzar,
+                    practicar y mejorar tu estilo.
+                </p>
+
+
+                <div class="precio-skate">
+                    $250.000
+                </div>
+
+
+                <button
+                    type="button"
+                    onclick="agregarAlCarrito(
+                        'Skate completo',
+                        250000,
+                        'Imagenes/Skate.jpg'
+                    )"
+                >
+                    🛒 Agregar al carrito
+                </button>
+
+
+            </div>
+
+
+        </article>
+
+
+
+        <!-- =================================
+             SKATE URBANO
+        ================================== -->
+
+        <article class="tarjeta-skate">
+
+
+            <div class="foto-skate">
+
+                <img
+                    src="Imagenes/skate2.jpg"
+                    alt="Skate urbano"
+                >
+
+                <span class="etiqueta-producto">
+                    NUEVO
+                </span>
+
+            </div>
+
+
+            <div class="info-skate">
+
+
+                <h2>
+                    Skate urbano
+                </h2>
+
+
+                <p>
+                    Diseño urbano para disfrutar
+                    tus recorridos y trucos.
+                </p>
+
+
+                <div class="precio-skate">
+                    $280.000
+                </div>
+
+
+                <button
+                    type="button"
+                    onclick="agregarAlCarrito(
+                        'Skate urbano',
+                        280000,
+                        'Imagenes/skate2.jpg'
+                    )"
+                >
+                    🛒 Agregar al carrito
+                </button>
+
+
+            </div>
+
+
+        </article>
+
+
+    </main>
+
+
+
+    <!-- =====================================
+         CARRITO JAVASCRIPT
+    ====================================== -->
+
+    <script src="carrito.js"></script>
+
+
 </body>
+
 </html>
+```
