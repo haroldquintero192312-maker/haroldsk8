@@ -1,0 +1,241 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta
+        name="viewport"
+        content="width=device-width, initial-scale=1.0"
+    >
+
+    <title>Medias | HarLis Sk8</title>
+
+    <link
+        rel="stylesheet"
+        href="style.css"
+    >
+
+</head>
+
+
+<body class="pagina-skates">
+
+
+    <!-- =====================================
+         ENCABEZADO
+    ====================================== -->
+
+    <header class="encabezado-categoria">
+
+
+        <!-- CARRITO -->
+
+        <a
+            href="Carrito.html"
+            class="boton-carrito"
+        >
+
+            🛒 Carrito
+
+            <span id="contador-carrito">
+                0
+            </span>
+
+        </a>
+
+
+        <h1>
+            🧦 Medias
+        </h1>
+
+
+        <p>
+            Comodidad y estilo para acompañarte
+            dentro y fuera de la pista.
+        </p>
+
+
+        <a
+            href="index.html"
+            class="volver"
+        >
+
+            ← Volver a HarLis Sk8
+
+        </a>
+
+
+    </header>
+
+
+
+    <!-- =====================================
+         PRODUCTOS
+    ====================================== -->
+
+    <main class="catalogo">
+
+
+        <!-- =================================
+             MEDIAS STREET
+        ================================== -->
+
+        <article class="tarjeta-skate">
+
+
+            <div class="foto-skate">
+
+                <img
+                    src="Imagenes/Medias.jpg"
+                    alt="Medias HarLis Sk8"
+                >
+
+                <span class="etiqueta-producto">
+                    DESTACADO
+                </span>
+
+            </div>
+
+
+            <div class="info-skate">
+
+
+                <h2>
+                    Medias Street
+                </h2>
+
+
+                <p>
+                    Comodidad y estilo urbano para
+                    acompañarte todos los días.
+                </p>
+
+
+                <div class="precio-skate">
+                    $35.000
+                </div>
+
+
+                <button
+                    type="button"
+                    onclick="agregarAlCarrito(
+                        'Medias Street',
+                        35000,
+                        'Imagenes/Medias.jpg'
+                    )"
+                >
+
+                    🛒 Agregar al carrito
+
+                </button>
+
+
+            </div>
+
+
+        </article>
+
+
+
+        <!-- =================================
+             MEDIAS URBAN
+        ================================== -->
+
+        <article class="tarjeta-skate">
+
+
+            <div class="foto-skate">
+
+                <img
+                    src="Imagenes/Medias (2).jpg"
+                    alt="Medias urbanas"
+                >
+
+                <span class="etiqueta-producto">
+                    NUEVO
+                </span>
+
+            </div>
+
+
+            <div class="info-skate">
+
+
+                <h2>
+                    Medias Urban
+                </h2>
+
+
+                <p>
+                    Diseño urbano y comodidad
+                    para tu estilo diario.
+                </p>
+
+
+                <div class="precio-skate">
+                    $40.000
+                </div>
+
+
+                <button
+                    type="button"
+                    onclick="agregarAlCarrito(
+                        'Medias Urban',
+                        40000,
+                        'Imagenes/Medias (2).jpg'
+                    )"
+                >
+
+                    🛒 Agregar al carrito
+
+                </button>
+
+
+            </div>
+
+
+        </article>
+
+
+    </main>
+
+
+
+    <!-- =====================================
+         FOOTER
+    ====================================== -->
+
+    <footer>
+
+        <div class="footer-logo">
+
+            HarLis <span>Sk8</span> 🛹
+
+        </div>
+
+
+        <p>
+            Skate • Estilo • Calle
+        </p>
+
+
+        <p class="copyright">
+            © 2026 HarLis Sk8
+        </p>
+
+    </footer>
+
+
+
+    <!-- =====================================
+         CARRITO JAVASCRIPT
+    ====================================== -->
+
+    <script src="carrito.js"></script>
+
+
+</body>
+
+</html>

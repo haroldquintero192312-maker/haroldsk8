@@ -1,0 +1,155 @@
+```html
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta
+        name="viewport"
+        content="width=device-width, initial-scale=1.0"
+    >
+
+    <title>Carrito | HarLis Sk8</title>
+
+    <link rel="stylesheet" href="style.css">
+
+</head>
+
+
+<body class="pagina-skates">
+
+
+    <!-- =================================
+         ENCABEZADO
+    ================================== -->
+
+    <header class="encabezado-categoria">
+
+        <a
+            href="index.html"
+            class="volver"
+        >
+            ← Volver a HarLis Sk8
+        </a>
+
+        <h1>
+            🛒 Mi carrito
+        </h1>
+
+        <p>
+            Revisa los productos que has seleccionado.
+        </p>
+
+    </header>
+
+
+
+    <!-- =================================
+         CARRITO
+    ================================== -->
+
+    <main class="contenedor-carrito">
+
+
+        <div
+            id="lista-carrito"
+            class="lista-carrito"
+        >
+        </div>
+
+
+        <!-- TOTAL -->
+
+        <div class="resumen-carrito">
+
+            <h2>
+                Total
+            </h2>
+
+            <div
+                id="total-carrito"
+                class="total-carrito"
+            >
+                $0
+            </div>
+
+
+            <button
+                class="boton-vaciar"
+                onclick="vaciarCarrito()"
+            >
+                🗑️ Vaciar carrito
+            </button>
+
+
+            <button
+                class="boton-finalizar"
+                onclick="finalizarCompra()"
+            >
+                🛒 Finalizar compra
+            </button>
+
+        </div>
+
+    </main>
+
+
+
+    <!-- =================================
+         FOOTER
+    ================================== -->
+
+    <footer>
+
+        <div class="footer-logo">
+            HarLis <span>Sk8</span> 🛹
+        </div>
+
+        <p>
+            Skate • Estilo • Calle
+        </p>
+
+        <p class="copyright">
+            © 2026 HarLis Sk8
+        </p>
+
+    </footer>
+
+
+
+    <!-- =================================
+         JAVASCRIPT
+    ================================== -->
+
+    <script src="carrito.js"></script>
+
+
+    <script>
+
+        function finalizarCompra() {
+
+            if (carrito.length === 0) {
+
+                alert(
+                    "Tu carrito está vacío 🛒"
+                );
+
+                return;
+            }
+
+
+            alert(
+                "🔥 ¡Gracias por tu compra en HarLis Sk8! 🛹"
+            );
+
+        }
+
+    </script>
+
+
+</body>
+
+</html>
+```

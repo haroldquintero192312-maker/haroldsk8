@@ -1,0 +1,241 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta
+        name="viewport"
+        content="width=device-width, initial-scale=1.0"
+    >
+
+    <title>Zapatos | HarLis Sk8</title>
+
+    <link
+        rel="stylesheet"
+        href="style.css"
+    >
+
+</head>
+
+
+<body class="pagina-skates">
+
+
+    <!-- =====================================
+         ENCABEZADO
+    ====================================== -->
+
+    <header class="encabezado-categoria">
+
+
+        <!-- CARRITO -->
+
+        <a
+            href="Carrito.html"
+            class="boton-carrito"
+        >
+
+            🛒 Carrito
+
+            <span id="contador-carrito">
+                0
+            </span>
+
+        </a>
+
+
+        <h1>
+            👟 Zapatos
+        </h1>
+
+
+        <p>
+            Diseño urbano y comodidad para llevar
+            tu estilo a cualquier lugar.
+        </p>
+
+
+        <a
+            href="index.html"
+            class="volver"
+        >
+
+            ← Volver a HarLis Sk8
+
+        </a>
+
+
+    </header>
+
+
+
+    <!-- =====================================
+         PRODUCTOS
+    ====================================== -->
+
+    <main class="catalogo">
+
+
+        <!-- =================================
+             ZAPATOS STREET
+        ================================== -->
+
+        <article class="tarjeta-skate">
+
+
+            <div class="foto-skate">
+
+                <img
+                    src="Imagenes/zapatos.jpg"
+                    alt="Zapatos HarLis Sk8"
+                >
+
+                <span class="etiqueta-producto">
+                    DESTACADO
+                </span>
+
+            </div>
+
+
+            <div class="info-skate">
+
+
+                <h2>
+                    Zapatos Street
+                </h2>
+
+
+                <p>
+                    Diseño urbano pensado para
+                    acompañar tu estilo sobre la tabla.
+                </p>
+
+
+                <div class="precio-skate">
+                    $180.000
+                </div>
+
+
+                <button
+                    type="button"
+                    onclick="agregarAlCarrito(
+                        'Zapatos Street',
+                        180000,
+                        'Imagenes/zapatos.jpg'
+                    )"
+                >
+
+                    🛒 Agregar al carrito
+
+                </button>
+
+
+            </div>
+
+
+        </article>
+
+
+
+        <!-- =================================
+             ZAPATOS URBAN PRO
+        ================================== -->
+
+        <article class="tarjeta-skate">
+
+
+            <div class="foto-skate">
+
+                <img
+                    src="Imagenes/zapatos (2).jpg"
+                    alt="Zapatos urbanos"
+                >
+
+                <span class="etiqueta-producto">
+                    NUEVO
+                </span>
+
+            </div>
+
+
+            <div class="info-skate">
+
+
+                <h2>
+                    Zapatos Urban Pro
+                </h2>
+
+
+                <p>
+                    Comodidad, resistencia y estilo
+                    para la vida urbana.
+                </p>
+
+
+                <div class="precio-skate">
+                    $210.000
+                </div>
+
+
+                <button
+                    type="button"
+                    onclick="agregarAlCarrito(
+                        'Zapatos Urban Pro',
+                        210000,
+                        'Imagenes/zapatos (2).jpg'
+                    )"
+                >
+
+                    🛒 Agregar al carrito
+
+                </button>
+
+
+            </div>
+
+
+        </article>
+
+
+    </main>
+
+
+
+    <!-- =====================================
+         FOOTER
+    ====================================== -->
+
+    <footer>
+
+        <div class="footer-logo">
+
+            HarLis <span>Sk8</span> 🛹
+
+        </div>
+
+
+        <p>
+            Skate • Estilo • Calle
+        </p>
+
+
+        <p class="copyright">
+            © 2026 HarLis Sk8
+        </p>
+
+    </footer>
+
+
+
+    <!-- =====================================
+         CARRITO JAVASCRIPT
+    ====================================== -->
+
+    <script src="carrito.js"></script>
+
+
+</body>
+
+</html>
